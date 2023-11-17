@@ -7,7 +7,7 @@ predictions.csv|This file contains the predictions of the current transactions.
 resamplingRatioOptimizationAndTuning.ipynb|This file contains all the code where I preprocess historical and current transactions data, implement model selection, and optimize resampling ratios.
 dataInspectionAndTesting.ipynb|This file contains all the code where I inspected the data, such as inspecting data types, null values, resampling techniques, and random testing to see if my code works.
 
-## Data inspection findings
+## Data Inspection and Findings
 - Some features are of “object” (string) data type:
   - x5: some kind of percentage, should be converted to float.
   - x6: day of the week (categorical), should be one-hot encoded.
@@ -29,7 +29,7 @@ dataInspectionAndTesting.ipynb|This file contains all the code where I inspected
   - For model selection, I have taken into consideration the recall of the “suspicious” class. This is because recall is the most important metric in spam/suspicion detection.
 
 
-## Methodology and process
+## Methodology and Process
 - Split historical data into X_train, y_train, X_test, y_test with stratified split to retain imbalance.
 - Preprocess X_train (deal with string features, one-hot encoding, null values, normalization).
 - Preprocess X_test (deal with string features, one-hot encoding, null values using X_train means and modes, normalization).
