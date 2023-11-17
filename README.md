@@ -9,15 +9,15 @@ dataInspectionAndTesting.ipynb|This file contains all the code where I inspected
 
 ## Data inspection findings
 -	Some features are of “object” (string) data type:
-  -	x5:  some kind of percentage, should be converted to float.
-  -	x6:  day of the week (categorical), should be one-hot encoded.
-  -	x20: months of the year (categorical), should be one-hot encoded.
-  -	x49: true/false, should be converted to binary.
-  -	x57: some kind of amount, should be converted to float.
+-	  x5:  some kind of percentage, should be converted to float.
+-	  x6:  day of the week (categorical), should be one-hot encoded.
+-	  x20: months of the year (categorical), should be one-hot encoded.
+-	  x49: true/false, should be converted to binary.
+-	  x57: some kind of amount, should be converted to float.
 -	Numerous null values throughout the dataset:
-  -	For categorical features, use mode.
-  -	For non-categorical features, use mean.
-  -	Null values in X_test should be filled using means and modes of X_train
+-	  For categorical features, use mode.
+-	  For non-categorical features, use mean.
+-	  Null values in X_test should be filled using means and modes of X_train
 -	Data should be normalized.
 -	Data is heavily imbalanced: 
   -	7561 unsuspicious transactions and only 439 suspicious transactions (95-5)
