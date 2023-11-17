@@ -2,11 +2,8 @@
 
 ## File Contents
 File|Content
----|---
 predictions.csv|This file contains the predictions of the current transactions.
----|---
 resamplingRatioOptimizationAndTuning.ipynb|This file contains all the code where I preprocess historical and current transactions data, implement model selection, and optimize resampling ratios.
----|---
 dataInspectionAndTesting.ipynb|This file contains all the code where I inspected the data, such as inspecting data types, null values, resampling techniques, and random testing to see if my code works.
 
 ## Data inspection findings
